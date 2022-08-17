@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/png" href="/movie-cinema.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Application</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="./movie-cinema.png" alt="blank image" />
+            <h2>Movie Application</h2>
+        </div>
+    </header>
+    <section>
+        <div id="main">
+            <form id="searchFormId">
+                <div id="title-div" class="row">
+                    <label for="Title">Title<span class="requiredText">*</span>:</label>
+                    <input type="text" id="Title" name="Title" /><span id="titleErr" class="errorShow"></span>
+                </div>
+                <div id="year-div" class="row">
+                    <label for="Year">Year:</label>
+                    <input type="text" id="Year" name="Year" /><span id="yearErr"></span>
+                </div>
+                <div id="plot-div" class="row">
+                    <label for="plotLength">Plot Length<span class="requiredText">*</span>:</label
+            >
+            <input type="radio" value="short" id="Short" name="plot" /> Short
+            <input type="radio" value="full" id="Long" name="plot" /> Full
+            <span id="plotErr" class="errorShow"></span>
+          </div>
+          <div id="submit-div" class="row">
+            <button type="button" id="submit">Submit</button>
+            <button type="button" id="submitAll">Find All</button>
+            <button type="button" id="resetButton">Reset</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section>
+      <div id="notifications"></div>
+    </section>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
